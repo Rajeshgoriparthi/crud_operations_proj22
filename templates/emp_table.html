@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px">
+        <tr>
+            <th>Emp id</th>
+            <th>Emp Name</th>
+            <th>Age</th>
+            <th>Emp dept</th>
+        </tr>
+    {% for e in edata %}
+        <tr>
+            <td>{{e.emp_id}}</td>
+            <td>{{e.ename}}</td>
+            <td>{{e.age}}</td>
+            <td>{{e.dept}}</td>
+        </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>
